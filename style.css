@@ -1,0 +1,44 @@
+/* Override font-family in order to display Chinese characters in Noto font */
+        .mdc-button,.mdc-typography--display1,.mdc-toolbar__title,.mdc-typography,.mdc-typography--subheading1,.mdc-list-item,.mdc-dialog__header__title,.mdc-dialog__body,.mdc-card__title,.mdc-typography--display3,.mdc-typography--body1,.mdc-textfield {
+        font-family:Roboto,'Noto Sans SC Sliced',sans-serif !important;
+}
+body {
+        height:100vh;
+        margin:0;
+}
+.toolbarfix {
+        height:64px;
+        font-family:sans-serif !important;
+        font-size:15px;
+}
+@media (max-width:599px) {
+        .toolbarfix {
+        height:56px !important;
+}
+main {
+        height:calc(100% - 56px) !important;
+}
+}.shorttitle {
+        display:block;
+}
+.fulltitle {
+        display:none;
+}
+@media (min-width:600px) {
+        .fulltitle {
+        display:block;
+}
+.shorttitle {
+        display:none;
+}
+}main {
+        height:calc(100% - 64px);
+        overflow-y:auto;
+        padding:0 16px;
+}
+.mdc-toolbar,.mdc-temporary-drawer,.mdc-button,.mdc-textfield {
+        --mdc-theme-primary:#008cff;
+}
+.mdc-button {
+        --mdc-theme-secondary:#ff7300;
+}
