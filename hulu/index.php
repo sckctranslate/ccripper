@@ -67,12 +67,12 @@
     </aside>
     <main class="scrollbar">
       <form method="GET">
-        <div class="mdc-textfield mdc-textfield--upgraded mdc-textfield--primary" data-mdc-auto-init="MDCTextfield">
+        <div class="mdc-textfield mdc-textfield--upgraded mdc-textfield--primary" data-mdc-auto-init="MDCTextField">
           <input type="text" id="link" name="link" class="mdc-textfield__input" required>
           <label class="mdc-textfield__label" for="link">link</label>
           <div class="mdc-textfield__bottom-line"></div></div>
         <br>
-        <div class="mdc-textfield mdc-textfield--upgraded mdc-textfield--primary" data-mdc-auto-init="MDCTextfield">
+        <div class="mdc-textfield mdc-textfield--upgraded mdc-textfield--primary" data-mdc-auto-init="MDCTextField">
           <input type="text" id="lang" name="lang" class="mdc-textfield__input" value="en" required>
           <label class="mdc-textfield__label mdc-textfield__label--float-above" for="lang">lang</label>
           <div class="mdc-textfield__bottom-line"></div></div>
