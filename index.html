@@ -49,20 +49,20 @@
       </div>
     </header>
     <!-- Navigation -->
-    <aside class="mdc-temporary-drawer mdc-typography">
-      <nav class="mdc-temporary-drawer__drawer">
-        <div class="mdc-temporary-drawer__toolbar-spacer">
+    <aside class="mdc-drawer--temporary mdc-typography">
+      <nav class="mdc-drawer__drawer">
+        <div class="mdc-drawer__toolbar-spacer">
           CC 字幕抓取工具
         </div>
-        <nav class="mdc-temporary-drawer__content mdc-list">
-          <a class="mdc-list-item mdc-temporary-drawer--selected" href="/">
-            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">home</i>首页</a>
+        <nav class="mdc-drawer__content mdc-list">
+          <a class="mdc-list-item mdc-list-item--selected" href="/">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">home</i>首页</a>
           <a class="mdc-list-item" href="https://www.sckctranslate.download">
-            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">arrow_back</i>返回资源站</a>
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">arrow_back</i>返回资源站</a>
           <hr class="mdc-list-divider">
           <a class="mdc-list-item" href="/googleplay/">Google Play</a>
           <a class="mdc-list-item" href="/hulu/">Hulu</a></nav>
-        <footer class="mdc-temporary-drawer__footer">
+        <footer class="mdc-drawer__footer">
           <div class="mdc-typography--subheading1" style="padding: 16px 16px;">© Translated by @SerCom_KC
             <br>有任何问题，请<a href="https://weibo.com/sercomkc">联系我们</a>。</div></footer>
       </nav>
@@ -71,7 +71,7 @@
     <script src="https://cdn.jsdelivr.net/npm/material-components-web/dist/material-components-web.min.js"></script>
     <script>window.mdc.autoInit();</script>
     <!-- Navigation drawer script-->
-    <script>let drawer = new mdc.drawer.MDCTemporaryDrawer(document.querySelector('.mdc-temporary-drawer'));
+    <script>let drawer = new mdc.drawer.MDCTemporaryDrawer(document.querySelector('.mdc-drawer--temporary'));
       document.querySelector('.menu').addEventListener('click', () => drawer.open = true);</script>
     <main class="scrollbar">
           <h2 class="mdc-typography--display1">请从左侧菜单选择一个来源网站以继续。</h2>
