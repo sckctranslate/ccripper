@@ -28,8 +28,14 @@ def get(content_id, lang):
         return 0
 
 def parse(link):
-        videoPage = requests.get(link)
-        content_id = re.search(r'content_id\\": \\"\d*', videoPage.text).group(0).replace(r'content_id\": \"', '')
+        video_id = re.search(r'//www\.hulu\.com/watch/\d+', link).group(0).replace("//www.hulu.com/watch/", "")
+        args = {
+                "video_id": video_id,
+                "dp_id": "hulu",
+                "package_id": "2"
+        }
+        video_info = requests.get("http://m.hulu.com/menu/11675", params=args)
+        content_id = etree.HTML(video_info.content).xpath('//items/data/content_id/text()')[0]
         return content_id
 
 if __name__ == '__main__':
